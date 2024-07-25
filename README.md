@@ -1,5 +1,40 @@
 # PensionFund
 
+A decentralized pension system.
+
+China: On July 21, 2024, the Third Plenary Session of the 20th Central Committee of the Communist Party of China passed the "Decision of the Central Committee of the Communist Party of China on Further Comprehensively Deepening Reform and Promoting Chinese-style Modernization," which mentioned advancing the gradual delay of the statutory retirement age reform in a prudent and orderly manner according to the principles of voluntariness and flexibility. Several tasks were also deployed in the social security field. The Chinese Academy of Social Sciences released a report stating that the cumulative balance of the National Urban Employee Basic Pension Insurance Fund will be exhausted by 2035. Over the next 30 years, the dependency ratio of the system will double, and the pressure on pension payments will continue to increase. In 2019, nearly two contributors supported one retiree; by 2050, almost one contributor will need to support one retiree. China's economic downturn, aging population, and low fertility rate are leading to severe challenges in the pension system. According to a report by The Wall Street Journal on May 29, 2024, the Chinese Academy of Social Sciences, a top government think tank in China, estimates that the National Urban Employee Basic Pension Insurance Fund will be exhausted by 2035. The International Monetary Fund (IMF) also predicts that China's economy will remain sluggish or even worsen in the coming years, with economic downturns further impacting the pension system.
+
+United States: The Social Security Amendments of 1983 gradually raised the full retirement age (FRA) from 65 to 67. Between 1935 and 2024, the contribution rates for employees and employers in the US pension system increased from 1% to 6.2%.
+
+Germany: Germany's pension system has undergone several adjustments, mainly to address population aging and fiscal pressures. The Pension Insurance Reform Act of 2007 (Rentenversicherungs-Altersgrenzenanpassungsgesetz 2007) gradually raised the statutory retirement age from 65 to 67 for those born in 1964 and later. The contribution rate has increased from 9% each for employees and employers in 1957 to 18.6% each in 2024.
+
+As ordinary citizens, we cannot control the contribution rates, the number of years of contributions, or the retirement age.
+
+So, is there any benefit to participating in social insurance, such as getting more money than managing it ourselves?
+
+Take China as an example. Suppose the following conditions: average monthly salary: 10,000 RMB, individual contribution rate: 8%, employer contribution rate: 16%, contribution period: 40 years, retirement age: 65, average life expectancy: 80 years, average monthly salary of employees in the previous year: 5,000 RMB, annual average return rate of individual accounts: 3%. If a resident normally participates in social insurance, and if he is an employee, he pays 800 RMB per month, and the employer pays 1,600 RMB per month; if he is self-employed, he needs to pay 2,400 RMB per month. After contributing to pension insurance for 40 years, the monthly pension he can receive after retirement is about 8,454.67 RMB. This amount will be adjusted based on the actual average monthly salary of employees, the personal account balance, and its returns.
+
+What if the resident manages this part of the funds himself?
+
+If he is self-employed and pays 2,400 RMB per month for pension insurance, he would have paid a total of 1,152,000 RMB. This is without considering compound interest. If calculated with 3% compound interest, by the time he retires at 65, his pension fund would accumulate to 2,226,000 RMB. Considering a 3% interest return on 2,226,000 RMB, he can withdraw all the money within 15 years, receiving about 15,366.67 RMB per month. Over 15 years, he would receive a total of 2,766,000 RMB.
+If he is an employee in China and only considers his personal contribution of 800 RMB per month, he would have paid a total of 384,000 RMB in pension insurance. This is without considering compound interest. If calculated with 3% compound interest, by the time he retires at 65, his personal account would accumulate to 723,848 RMB. Considering a 3% interest return on 723,848 RMB, he can withdraw all the money within 15 years, receiving about 5,091 RMB per month. The total amount received would be 916,380 RMB.
+
+This is still under the premise of not considering government default, delayed retirement age, other policy changes, unexpected early death, etc., and people cannot ensure whether they can receive the pension they have paid or how much they can receive.
+
+Obviously, this is not a good deal. Managing it ourselves is significantly more profitable than giving it to the government or some centralized institutions. However, people do not generally manage their pensions themselves. The reasons may be numerous: it may require compulsion to prevent oneself from misusing this crucial pension money, one may not have the ability to manage the pension funds, or there may be a lack of trustworthy institutions to assist in managing the pension.
+
+Blockchain might provide a new solution to this problem.
+
+The core value of blockchain is decentralization, transparency, and trustless networks. Code is Law. All pension systems worldwide are regulated by centralized institutions such as governments or companies. In regions with unstable policies, young people may have significant concerns about whether they will receive the expected returns on their pension contributions.
+
+Based on this idea, I wrote the PensionFund smart contract. Through blockchain, decentralized management of personal pensions can be achieved. Users have absolute control over the rules of their pensions, including contribution period, contribution cycle, contribution amount, withdrawal time, withdrawal period, payout wallet, and beneficiaries in case of unexpected situations. This removes significant instability from centralized institutions. To restrict the specific use of pension funds and prevent arbitrary withdrawals, while also ensuring that the funds can be withdrawn in extremely special circumstances, I have implemented a multi-signature system. Only when the number of people agreeing to use the pension funds reaches the set threshold can the funds be used; otherwise, they cannot be withdrawn. The same restriction applies to modifying key information such as expected retirement time and payout wallet address, which is only allowed when the threshold number of signatures is reached.
+
+Future upgrade ideas: Select large-scale DeFi projects, call their interfaces to manage pensions, and ensure stable growth. The selected DeFi projects will be regularly adjusted, and the adjustment method can be determined through community voting. Issue tokens to users based on the amount of pension contributions. The number of tokens held can serve as credentials for DAO governance, such as voting rights for selecting DeFi interfaces.
+
+The contract has been deployed and debugged on Sepolia, with the contract address at 0xcDA643aAd5ED482A4958B370a2Bf142a173Efe3d.
+
+==================================================================================================
+
 A decentralised pension system.
 
 中国：2024 年 7 月 21 日，中国共产党第二十届中央委员会第三次全体会议通过的《中共中央关于进一步全面深化改革、推进中国式现代化的决定》公布，其中提到按照自愿、弹性原则，稳妥有序推进渐进式延迟法定退休年龄改革，并对社保领域多项工作作出部署。
